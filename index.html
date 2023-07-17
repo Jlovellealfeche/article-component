@@ -6,26 +6,26 @@
   <meta name="description" content="A solution for Article component">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <link rel="stylesheet" src="index.css">
 </head>
-<body class="text-gray-700 bg-[#ecf2f8]">
+<body class="text-[#48556a] bg-[#ecf2f8]">
 
-  <div class="flex flex-col justify-center items-center min-h-screen bg-blueGray-50">
-    <div class="bg-white">
-      <img src="images/drawers.jpg" alt="Green drawer with 2 frames and nice deco">
+  <div class="flex justify-center items-center min-h-screen bg-blueGray-50 ">
+    <div class="bg-white w-96 text-center rounded-b-lg">
+      <img src="images/drawers.jpg" alt="Green drawer with 2 frames and nice deco" class="h-49 w-full object-cover top-0 rounded-t-lg">
 
-      <div class="text-center px-6 mt-8">
-        <h1 class="text-2xl font-bold mb-4">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-    
-        <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      </div>
+      <div class="px-6">
+        <h1 class="text-2xl font-bold mt-4">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
       
-      <div class="flex items-center mt-8">
+        <p class="mt-4">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+      </div>
+      <div class="flex justify-center items-center mt-1  gap-3">
         <img src="images/avatar-michelle.jpg" alt="A picture of Michelle Appleton" class="w-10 h-10 rounded-full">
         <div class="ml-3">
           <h3 class="text-sm font-medium">Michelle Appleton</h3>
           <span class="text-gray-600">28 Jun 2020</span>
         </div>
-        <button class="ml-auto"><img src="images/icon-share.svg" alt="Arrow button SVG for sharing"></button>
+        <button><img src="images/icon-share.svg" alt="Arrow button SVG for sharing"></button>
       </div>
     </div>
   </div>
