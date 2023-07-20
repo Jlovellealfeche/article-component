@@ -14,7 +14,7 @@
 </head>
 <body class="text-[#48556a] bg-[#ecf2f8] font-[Manrope]">
 
-  <div class="flex justify-center items-center min-h-screen bg-blueGray-50 ">
+  <div class=" container flex justify-center items-center min-h-screen bg-blueGray-50 ">
     <div class="bg-white w-96 text-center rounded-lg">
       <img src="images/drawers.jpg" alt="Green drawer with 2 frames and nice deco" class="h-49 w-full object-cover top-0 rounded-t-lg">
 
@@ -24,20 +24,20 @@
       </div>
 
       <!--article state start-->
-      <div class="flex justify-between items-center my-8 px-8  gap-2">
+      <div class="avatar-details flex justify-between items-center my-8 px-8  gap-2">
         <img src="images/avatar-michelle.jpg" alt="A picture of Michelle Appleton" class="w-12 h-12 rounded-full">
         <div class=" flex-initial text-left mr-6">
           <h2 class="text-sm font-medium">Michelle Appleton</h3>
           <span class="text-gray-600  ">28 Jun 2020</span>
         </div>
-        <button class="btn bg-[#ecf2f8] w-9 h-9 rounded-full"><img src="images/icon-share.svg" class="ml-3 mb-1" alt="Arrow button SVG for sharing">
+        <button class="link-btn bg-[#ecf2f8] w-9 h-9 rounded-full"><img src="images/icon-share.svg" class="ml-3 mb-1" alt="Arrow button SVG for sharing">
           <a src="" target="_blank" class="cursor-pointer"></a>
         </button>
       </div>
      <!--article state end-->
 
      <!--Links(active) state start-->
-      <div class="bg-[#48556a] h-16 rounded-b-[10px] hidden">
+      <div class="active bg-[#48556a] h-16 rounded-b-[10px] hidden">
         <ul class="flex flex-row gap-5 pt-4 justify-center items-center">
           <h3 class="text-slate-400 text-[13px] uppercase font-medium leading-tight tracking-[5px]">Share</h3>
           <li class="btn"><img src="images/icon-facebook.svg">
@@ -49,8 +49,9 @@
           <li class="btn"><img src="images/icon-pinterest.svg">
             <a src="" target="_blank" class="cursor-pointer"></a>
           </li>
-          <button class="w-8 h-8 relative ml-14">
-            <div class="w-8 h-8 left-0 top-0 absolute bg-slate-500 rounded-full"><img src="images/icon-share.svg " class="mt-2 ml-[10px] stroke-[white]" alt="Arrow button SVG for sharing">
+          <button class="share-btn w-8 h-8 relative ml-14">
+            <div class="w-8 h-8 left-0 top-0 absolute bg-slate-500 rounded-full">
+             <img src="images/icon-share.svg " class=" mt-2 ml-[10px] stroke-[white]" alt="Arrow button SVG for sharing">
              <a src="" target="_blank" class="cursor-pointer"></a>
             </div>
           </button>
