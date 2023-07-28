@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./solution-previews/Article%20component%20mobile.png)
+![](./solution-previews/article%20component%20mobile-active.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -61,22 +62,29 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+HTML-Tailwind CSS: "I have learned how to properly use breakpoints in Tailwind CSS. I had been struggling with it, but I was happy that I was able to learn something. In HTML, in the class tag, I needed to define the default value first. Like the example code below, the default is 'flex' with a white background. However, I wanted to change the flex direction to 'column' for small screens (xs - 375px) and 'row' for larger screens (lg - desktop). 
 
-To see how you can add code snippets, see below:
+My mistake was defining 'flex' twice, both as the default and within the breakpoints, which resulted in an error and the styles not being rendered."
+
+JS: I was able to learn how to use the event listener to hide and render a component. see code below. In Html i added the class hidden on the element that i would like to appear when the button is clicked
+
+Here are the code snippets:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+<div class="flex bg-white  xs:w-96 text-center rounded-lg flex-col lg:flex-row">
+
+  <div class="active bg-[#48556a] h-16 rounded-b-[10px] mt-5  hidden"> <!--this is to hide the element-->
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const avatarContainer = document.querySelector(".avatar-details");
+const activeContainer = document.querySelector(".active");
+const linkButton = document.querySelector(".link-btn");
+const shareButton = document.querySelector(".share-btn");
+
+linkButton.addEventListener("click", () => {
+    avatarContainer.style.display ="none";
+    activeContainer.classList.remove("hidden");
+})
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
