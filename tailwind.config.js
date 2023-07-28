@@ -2,7 +2,7 @@
 
 
 module.exports = {
-  content: [],
+  content: [ "./src/**/*.{html,js}"],
   theme: {
     colors:{
       current: "white",
