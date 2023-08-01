@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*----Font-----*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+  font-family:'Manrope', sans-serif;
+  font-size: 0.813rem;
+}
+
+.title {
+  font-weight: 700;
+  font-size: medium;
+}
+
+
+
+@media only screen (min-width:375px) {
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-height: 40rem;
+    text-align: center;
+    border-radius: 0.5rem
+
+
+  }
+
+}

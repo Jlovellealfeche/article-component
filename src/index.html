@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A solution for Article component">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
- 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A solution for Article component">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="/src/index.css">
+  </head>
+  <body class="text-[#48556a] bg-[#ecf2f8]">
 
-</head>
-<body class="text-[#48556a] bg-[#ecf2f8] font-[Manrope]">
+    <div class="container flex justify-center items-center min-h-screen bg-blueGray-50 ">
+      <div class="card bg-current lg:max-h-[17.5rem]">
+        <img src="/images/drawers.jpg" alt="Green drawer with 2 frames and nice deco" class="rounded-t-lg lg:max-w-[18.8rem]">
 
-  <div class="container flex justify-center items-center min-h-screen bg-blueGray-50 ">
-    <div class="flex bg-white  xs:w-96 text-center rounded-lg flex-col lg:flex-row">
-      <img src="/images/drawers.jpg" alt="Green drawer with 2 frames and nice deco" class=" rounded-t-lg">
-
-      <div class="text px-6 text-left md:flex flex-col  ">
-        <h1 class=" title mt-8 mb-2 pl-4 pr-6  font-bold">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>     
-        <p class="my-2 px-4 text-left text-sm ">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      </div>
-
-      <!--article state start-->
-      <div class="avatar-details flex justify-between items-center my-8 px-8  gap-2">
-        <img src="/images/avatar-michelle.jpg" alt="A picture of Michelle Appleton" class="w-12 h-12 rounded-full">
-        <div class=" flex-initial text-left mr-6">
-          <h2 class="text-sm font-medium">Michelle Appleton</h3>
-          <span class="text-gray-600  ">28 Jun 2020</span>
+        <div class="text px-6 text-left md:flex flex-col  ">
+          <h1 class=" title mt-8 mb-4 pl-4 pr-6  font-bold">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>     
+          <p class="my-2 px-4 text-left text-base">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
         </div>
-        <button class="link-btn bg-[#ecf2f8] w-9 h-9 rounded-full"><img src="/images/icon-share.svg" class="ml-3 mb-1 " alt="Arrow button SVG for sharing">
-          <a src="" target="_blank" class="cursor-pointer"></a>
-        </button>
-      </div>
-     <!--article state end-->
 
-     <!--Links(active) state start-->
-      <div class="active bg-[#48556a] h-16 rounded-b-[10px] mt-5  hidden">
-        <ul class="flex flex-row gap-5 pt-4 justify-center items-center">
-          <h3 class="text-slate-400 text-[13px] uppercase font-medium leading-tight tracking-[5px]">Share</h3>
-          <li class="btn"><img src="/images/icon-facebook.svg">
+        <!--article state start-->
+        <div class="avatar flex justify-between items-center my-8 px-8  gap-2">
+          <img src="/images/avatar-michelle.jpg" alt="A picture of Michelle Appleton" class="w-12 h-12 rounded-full">
+          <div class=" flex-initial text-left mr-6">
+            <h2 class="text-base font-semibold">Michelle Appleton</h3>
+            <span class="text-[#9daec2]  text-base ">28 Jun 2020</span>
+          </div>
+          <button class="link-btn bg-[#ecf2f8] w-9 h-9 rounded-full"><img src="/images/icon-share.svg" class="ml-3 mb-1 " alt="Arrow button SVG for sharing">
             <a src="" target="_blank" class="cursor-pointer"></a>
-          </li>
-          <li class="btn"><img src="/images/icon-twitter.svg">
-            <a src="" target="_blank" class="cursor-pointer"></a>
-          </li>
-          <li class="btn"><img src="/images/icon-pinterest.svg">
-            <a src="" target="_blank" class="cursor-pointer"></a>
-          </li>
-          <button class="share-btn w-8 h-8 relative ml-14">
-            <div class="w-8 h-8 left-0 top-0 absolute bg-slate-500 rounded-full">
-             <img src="/images/icon-share.svg" class=" mt-2 ml-[10px] fill-current" alt="Arrow button SVG for sharing">
-             <a src="" target="_blank" class="cursor-pointer"></a>
-            </div>
           </button>
-        </ul>
+        </div>
+      <!--article state end-->
+
+      <!--Links(active) state start-->
+        <div class="active bg-[#48556a] h-16 rounded-b-[10px] mt-5  hidden">
+          <ul class="flex flex-row gap-5 pt-4 justify-center items-center">
+            <h3 class="text-slate-400 text-[13px] uppercase font-medium leading-tight tracking-[5px]">Share</h3>
+            <li class="btn"><img src="/images/icon-facebook.svg">
+              <a src="" target="_blank" class="cursor-pointer"></a>
+            </li>
+            <li class="btn"><img src="/images/icon-twitter.svg">
+              <a src="" target="_blank" class="cursor-pointer"></a>
+            </li>
+            <li class="btn"><img src="/images/icon-pinterest.svg">
+              <a src="" target="_blank" class="cursor-pointer"></a>
+            </li>
+            <button class="share-btn w-8 h-8 relative ml-14">
+              <div class="w-8 h-8 left-0 top-0 absolute bg-slate-500 rounded-full">
+              <img src="/images/icon-share.svg" class=" mt-2 ml-[10px] fill-current" alt="Arrow button SVG for sharing">
+              <a src="" target="_blank" class="cursor-pointer"></a>
+              </div>
+            </button>
+          </ul>
+        </div>
+
+      <!--Links(active) state end-->
+
       </div>
-
-     <!--Links(active) state end-->
-
     </div>
-  </div>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="index.js"></script>
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
